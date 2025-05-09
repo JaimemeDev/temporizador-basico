@@ -1,0 +1,60 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #00ffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  text-align: center;
+}
+
+#inputContainer {
+  margin-bottom: 30px;
+}
+
+#inputMinutes {
+  font-size: 18px;
+  padding: 5px;
+  width: 100px;
+}
+
+button {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00bfa6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #009688;
+}
+
+#timer {
+  font-size: 500px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+@keyframes alertAnimation {
+  0% { color: #00ffcc; transform: scale(1); }
+  25% { color: #ff4444; transform: scale(1.05); }
+  50% { color: #ffffff; transform: scale(1); }
+  75% { color: #ff4444; transform: scale(1.05); }
+  100% { color: #00ffcc; transform: scale(1); }
+}
+
+.alert {
+  animation: alertAnimation 1s infinite;
+}
